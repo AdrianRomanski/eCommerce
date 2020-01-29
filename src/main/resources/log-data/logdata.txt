@@ -1,0 +1,297 @@
+2020-01-29 12:43:31.292  INFO 13800 --- [main] com.example.Application                  : Starting Application on DESKTOP-FC6D15M with PID 13800 (started by Adrian in C:\Users\Adrian\Desktop\Java\GitHub\eCommerce Application)
+2020-01-29 12:43:31.296  INFO 13800 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2020-01-29 12:43:31.905  INFO 13800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-29 12:43:31.957  INFO 13800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 4 repository interfaces.
+2020-01-29 12:43:32.335  INFO 13800 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3027eb3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-29 12:43:32.529  INFO 13800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-29 12:43:32.552  INFO 13800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-29 12:43:32.553  INFO 13800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-01-29 12:43:32.672  INFO 13800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-29 12:43:32.672  INFO 13800 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1304 ms
+2020-01-29 12:43:32.801  INFO 13800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-29 12:43:32.886  INFO 13800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-29 12:43:32.925  INFO 13800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-29 12:43:32.969  INFO 13800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-01-29 12:43:32.972  INFO 13800 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-29 12:43:33.077  INFO 13800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-29 12:43:33.177  INFO 13800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-29 12:43:33.721  INFO 13800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-29 12:43:34.172  INFO 13800 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46fdfaeb, org.springframework.security.web.context.SecurityContextPersistenceFilter@78bce1c4, org.springframework.security.web.header.HeaderWriterFilter@4c91f5bf, org.springframework.web.filter.CorsFilter@102aa5fc, org.springframework.security.web.authentication.logout.LogoutFilter@78aa1753, com.example.security.JWTAuthenticationFilter@36885319, com.example.security.JWTAuthorizationFilter@62a81453, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45b6c666, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@568c9ee1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bab804f, org.springframework.security.web.session.SessionManagementFilter@4fc256ec, org.springframework.security.web.access.ExceptionTranslationFilter@2b540131, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5213b887]
+2020-01-29 12:43:34.287  INFO 13800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-29 12:43:34.328  WARN 13800 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-29 12:43:34.520  INFO 13800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-29 12:43:34.523  INFO 13800 --- [main] com.example.Application                  : Started Application in 3.627 seconds (JVM running for 4.45)
+2020-01-29 12:43:43.716  INFO 13800 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-29 12:43:43.716  INFO 13800 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-29 12:43:43.722  INFO 13800 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-01-29 12:43:43.795  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:43.795  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:43.836  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:43.836  WARN 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:44.098  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:44.099  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:44.100  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:44.100  WARN 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:44.781  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:44.781  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:44.782  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:44.783  WARN 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:45.284  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:45.284  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:45.286  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:45.286  WARN 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:45.781  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:45.782  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:45.803  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:45.804  WARN 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:46.159  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:46.159  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:46.161  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:46.161  WARN 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:46.676  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:46.676  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:46.678  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:46.678  WARN 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:47.094  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:47.094  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:47.095  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:47.096  WARN 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:47.472  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:47.472  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:47.474  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:47.474  WARN 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:47.812  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:47.812  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:47.814  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:47.814  WARN 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:48.176  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:48.177  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:48.179  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:48.179  WARN 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:48.597  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:48.597  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:48.602  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:48.602  WARN 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:48.933  INFO 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:48.934  INFO 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:48.940  INFO 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:48.940  WARN 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:49.356  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:49.356  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:49.358  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:49.358  WARN 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:49.789  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:49.789  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:49.790  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:49.791  WARN 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:50.157  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:50.157  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:50.160  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:50.160  WARN 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:50.548  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:50.548  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:50.550  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:50.550  WARN 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:50.892  INFO 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:50.892  INFO 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:50.894  INFO 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:50.894  WARN 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:51.230  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:51.230  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:51.232  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:51.232  WARN 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:51.564  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:51.564  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:51.566  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:51.566  WARN 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:51.903  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:51.903  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:51.904  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:51.905  WARN 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:52.204  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:52.205  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:52.207  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:52.208  WARN 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:52.848  INFO 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:52.848  INFO 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:52.849  INFO 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:52.849  WARN 13800 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:53.221  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:53.221  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:53.222  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:53.223  WARN 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:43:53.611  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:43:53.611  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:43:53.613  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:43:53.613  WARN 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Not_Equals
+2020-01-29 12:44:02.763  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:02.764  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:02.765  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:02.765  WARN 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:03.113  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:03.113  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:03.121  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:03.121  WARN 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:03.620  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:03.621  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:03.622  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:03.622  WARN 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:04.080  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:04.080  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:04.082  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:04.082  WARN 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:04.478  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:04.478  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:04.479  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:04.479  WARN 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:04.888  INFO 13800 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:04.888  INFO 13800 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:04.890  INFO 13800 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:04.890  WARN 13800 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:05.307  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:05.307  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:05.314  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:05.314  WARN 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:05.802  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:05.802  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:05.804  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:05.804  WARN 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:06.145  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:06.145  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:06.147  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:06.147  WARN 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:06.579  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:06.579  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:06.581  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:06.581  WARN 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:07.072  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:07.072  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:07.074  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:07.074  WARN 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Too_Short
+2020-01-29 12:44:14.890  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:14.891  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:14.893  INFO 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:14.893  WARN 13800 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:15.448  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:15.448  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:15.449  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:15.450  WARN 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:15.835  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:15.835  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:15.837  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:15.837  WARN 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:16.212  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:16.212  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:16.213  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:16.213  WARN 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:16.538  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:16.538  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:16.539  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:16.540  WARN 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:16.879  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:16.879  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:16.881  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:16.882  WARN 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:17.218  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:17.218  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:17.220  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:17.220  WARN 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:17.810  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:17.813  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:17.828  INFO 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:17.828  WARN 13800 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:18.157  INFO 13800 --- [http-nio-8080-exec-9] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:18.158  INFO 13800 --- [http-nio-8080-exec-9] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:18.159  INFO 13800 --- [http-nio-8080-exec-9] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:18.159  WARN 13800 --- [http-nio-8080-exec-9] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:18.573  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:18.573  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:18.575  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:18.575  WARN 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:18.941  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:18.941  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:18.943  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:18.943  WARN 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:19.314  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:19.314  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:19.316  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:19.316  WARN 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:19.661  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:19.661  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:19.663  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:19.664  WARN 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:20.010  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:20.010  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:20.011  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:20.011  WARN 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:20.364  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:20.364  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:20.366  INFO 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:20.366  WARN 13800 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:20.751  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:20.751  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:20.753  INFO 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:20.753  WARN 13800 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:21.062  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:21.062  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:21.063  INFO 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:21.063  WARN 13800 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:21.401  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:21.401  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:21.403  INFO 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:21.403  WARN 13800 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:22.107  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:22.107  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:22.108  INFO 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:22.108  WARN 13800 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 12:44:22.599  INFO 13800 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 12:44:22.599  INFO 13800 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 12:44:22.601  INFO 13800 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 12:44:22.601  WARN 13800 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : WARN: CreateUser = Failed | Reason = Illegal_Characters
+2020-01-29 13:23:36.594  INFO 10472 --- [main] com.example.Application                  : Starting Application on DESKTOP-FC6D15M with PID 10472 (started by Adrian in C:\Users\Adrian\Desktop\Java\GitHub\eCommerce Application)
+2020-01-29 13:23:36.597  INFO 10472 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2020-01-29 13:23:37.318  INFO 10472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-29 13:23:37.373  INFO 10472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 4 repository interfaces.
+2020-01-29 13:23:37.722  INFO 10472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d28ec14e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-29 13:23:37.913  INFO 10472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-29 13:23:37.934  INFO 10472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-29 13:23:37.934  INFO 10472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-01-29 13:23:38.059  INFO 10472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-29 13:23:38.059  INFO 10472 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1418 ms
+2020-01-29 13:23:38.184  INFO 10472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-29 13:23:38.268  INFO 10472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-29 13:23:38.305  INFO 10472 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-29 13:23:38.347  INFO 10472 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-01-29 13:23:38.348  INFO 10472 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-29 13:23:38.440  INFO 10472 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-29 13:23:38.555  INFO 10472 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-29 13:23:39.084  INFO 10472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-29 13:23:39.488  INFO 10472 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7646c9f5, org.springframework.security.web.context.SecurityContextPersistenceFilter@36d39655, org.springframework.security.web.header.HeaderWriterFilter@6e7fa4b0, org.springframework.web.filter.CorsFilter@7b54a0a4, org.springframework.security.web.authentication.logout.LogoutFilter@66fff42f, com.example.security.JWTAuthenticationFilter@682d9f21, com.example.security.JWTAuthorizationFilter@2e64ae1a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@576b385d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f1574c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6eadd342, org.springframework.security.web.session.SessionManagementFilter@3e89f5bc, org.springframework.security.web.access.ExceptionTranslationFilter@580154b3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@115a7e51]
+2020-01-29 13:23:39.601  INFO 10472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-29 13:23:39.638  WARN 10472 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-29 13:23:39.809  INFO 10472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-29 13:23:39.812  INFO 10472 --- [main] com.example.Application                  : Started Application in 3.557 seconds (JVM running for 4.384)
+2020-01-29 13:24:14.273  INFO 10472 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-29 13:24:14.273  INFO 10472 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-29 13:24:14.281  INFO 10472 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-01-29 13:24:14.382  INFO 10472 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-29 13:24:14.383  INFO 10472 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-29 13:24:14.434  INFO 10472 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-29 13:24:14.548  INFO 10472 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Password encrypted with: bCryptPasswordEncoder.encode(createUserRequest.getPassword()
+2020-01-29 13:24:14.555  INFO 10472 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: User Adrian successfully created and saved to repository
+2020-01-29 13:24:45.980  INFO 10472 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-29 13:25:56.509  INFO 10472 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Item Round Widget successfully added to the cart
+2020-01-29 13:25:58.614  INFO 10472 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Item Round Widget successfully added to the cart
+2020-01-29 13:25:59.210  INFO 10472 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Item Round Widget successfully added to the cart
+2020-01-29 13:26:10.267  INFO 10472 --- [http-nio-8080-exec-9] com.example.controllers.UserController   : INFO: order successfully submitted for user - Adrian
+2020-01-29 13:26:11.762  INFO 10472 --- [http-nio-8080-exec-10] com.example.controllers.UserController   : INFO: order successfully submitted for user - Adrian
+2020-01-29 13:26:12.391  INFO 10472 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : INFO: order successfully submitted for user - Adrian
+2020-01-29 13:26:17.420  INFO 10472 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: 3 orders successfully returned for user Adrian
+2020-01-29 13:26:18.136  INFO 10472 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: 3 orders successfully returned for user Adrian
+2020-01-29 13:26:20.930  WARN 10472 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : WARN: User - Adriannn not found
+2020-01-29 13:26:30.137  WARN 10472 --- [http-nio-8080-exec-5] com.example.controllers.UserController   : WARN: User - Adriannn not found
+2020-01-29 13:26:36.870  WARN 10472 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : WARN: User - Adriannn222 not found

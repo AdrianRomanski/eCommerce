@@ -1,0 +1,59 @@
+2020-01-19 21:08:10.358  INFO 8024 --- [main] com.example.Application                  : Starting Application on DESKTOP-FC6D15M with PID 8024 (started by Adrian in C:\Users\Adrian\Desktop\Java\GitHub\eCommerce Application)
+2020-01-19 21:08:10.361  INFO 8024 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2020-01-19 21:08:11.022  INFO 8024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-19 21:08:11.084  INFO 8024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 4 repository interfaces.
+2020-01-19 21:08:11.508  INFO 8024 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$512e17b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-19 21:08:11.757  INFO 8024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-19 21:08:11.780  INFO 8024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-19 21:08:11.780  INFO 8024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-01-19 21:08:11.916  INFO 8024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-19 21:08:11.916  INFO 8024 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1506 ms
+2020-01-19 21:08:12.061  INFO 8024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-19 21:08:12.157  INFO 8024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-19 21:08:12.201  INFO 8024 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-19 21:08:12.268  INFO 8024 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-01-19 21:08:12.269  INFO 8024 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-19 21:08:12.414  INFO 8024 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-19 21:08:12.550  INFO 8024 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-19 21:08:13.184  INFO 8024 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-19 21:08:13.644  INFO 8024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cdc8499, org.springframework.security.web.context.SecurityContextPersistenceFilter@34626d4, org.springframework.security.web.header.HeaderWriterFilter@5868ea91, org.springframework.web.filter.CorsFilter@2a30b0cb, org.springframework.security.web.authentication.logout.LogoutFilter@546c30c2, com.example.security.JWTAuthenticationFilter@73d7d676, com.example.security.JWTAuthorizationFilter@8e3449e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6afaf27, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27d5eb00, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3023f157, org.springframework.security.web.session.SessionManagementFilter@476a970c, org.springframework.security.web.access.ExceptionTranslationFilter@7ac90dab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a914a00]
+2020-01-19 21:08:13.761  INFO 8024 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-19 21:08:13.803  WARN 8024 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-19 21:08:13.970  INFO 8024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-19 21:08:13.973  INFO 8024 --- [main] com.example.Application                  : Started Application in 4.066 seconds (JVM running for 5.092)
+2020-01-19 21:09:38.168  INFO 8024 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-19 21:09:38.169  INFO 8024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-19 21:09:38.175  INFO 8024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-01-19 21:09:38.250  INFO 8024 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-19 21:09:38.250  INFO 8024 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-19 21:09:38.290  INFO 8024 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-19 21:09:38.291  WARN 8024 --- [http-nio-8080-exec-1] com.example.controllers.UserController   : WARN: Passwords entered by a user are not equal
+2020-01-19 21:10:03.511  INFO 8024 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-19 21:10:03.511  INFO 8024 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-19 21:10:03.513  INFO 8024 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-19 21:10:03.514  WARN 8024 --- [http-nio-8080-exec-4] com.example.controllers.UserController   : WARN: Password have to be longer than 6 characters
+2020-01-19 21:10:11.202  INFO 8024 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-19 21:10:11.202  INFO 8024 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-19 21:10:11.204  INFO 8024 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-19 21:10:11.204  WARN 8024 --- [http-nio-8080-exec-6] com.example.controllers.UserController   : WARN: Passwords entered by a user are not equal
+2020-01-19 21:10:27.002  INFO 8024 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-19 21:10:27.003  INFO 8024 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-19 21:10:27.005  INFO 8024 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-19 21:10:27.005  WARN 8024 --- [http-nio-8080-exec-7] com.example.controllers.UserController   : WARN: Password have to be made from small and large letters, no special signs or spaces
+2020-01-19 21:10:33.156  INFO 8024 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-19 21:10:33.157  INFO 8024 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-19 21:10:33.158  INFO 8024 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-19 21:10:33.159  WARN 8024 --- [http-nio-8080-exec-8] com.example.controllers.UserController   : WARN: Passwords entered by a user are not equal
+2020-01-19 21:10:42.152  INFO 8024 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-19 21:10:42.152  INFO 8024 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-19 21:10:42.165  INFO 8024 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-19 21:10:42.174  WARN 8024 --- [http-nio-8080-exec-2] com.example.controllers.UserController   : WARN: Password have to be made from small and large letters, no special signs or spaces
+2020-01-19 21:11:05.410  INFO 8024 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Username set with: createUserRequest.getUsername()
+2020-01-19 21:11:05.411  INFO 8024 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Salt set with: RandomStringUtils.randomAlphanumeric(16)
+2020-01-19 21:11:05.412  INFO 8024 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Cart created and saved to repository
+2020-01-19 21:11:05.534  INFO 8024 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: Password encrypted with: bCryptPasswordEncoder.encode(createUserRequest.getPassword()
+2020-01-19 21:11:05.544  INFO 8024 --- [http-nio-8080-exec-3] com.example.controllers.UserController   : INFO: User Adrian successfully created and saved to repository
+2020-01-19 21:12:13.431  INFO 8024 --- [http-nio-8080-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-19 21:12:13.547  WARN 8024 --- [http-nio-8080-exec-7] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
